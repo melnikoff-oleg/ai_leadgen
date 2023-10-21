@@ -25,7 +25,7 @@ def parse_profile(profile_url: str, settings: Settings):
     except:
         return "Something went wrong with this profile"
     res = dict()
-    print(json.dumps(response, indent=4), "\n")
+    # print(json.dumps(response, indent=4), "\n")
     res["name"] = response.get("full_name", None)
     res["headline"] = response.get("headline", None)
     res["description"] = response.get("summary", None)
