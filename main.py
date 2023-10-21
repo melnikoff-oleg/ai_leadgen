@@ -19,7 +19,7 @@ def main():
     json_packaged_marketing_letters = get_json_packaged_marketing_letters(
         marketing_letters
     )
-    print(json_packaged_marketing_letters, "\n")
+    print(json.dumps(json_packaged_marketing_letters, indent=4), "\n")
     df = pd.DataFrame([json_packaged_marketing_letters])
     df.to_csv("result.csv")
 

@@ -5,14 +5,14 @@ import openai
 def autocomplete(prompt: str) -> str:
     try:
         completion = openai.ChatCompletion.create(
-            model="gpt-3.5-turbo",
+            model="gpt-4",
             messages=[{"role": "user", "content": prompt}],
             max_tokens=1000,
             temperature=0.8,
         )
     except:
         completion = openai.ChatCompletion.create(
-            model="gpt-4",
+            model="gpt-3.5-turbo",
             messages=[{"role": "user", "content": prompt}],
             max_tokens=1000,
             temperature=0.8,
@@ -60,7 +60,7 @@ def get_marketing_letter(personal_summmary: str) -> str:
     - there's no work on the client's side, we do everything ourselves
     Summary of the person that we're reaching out to and his/her company:
     {personal_summmary}
-    Write an email letter according to the REQUIREMENTS above, also add TWO follow-up letters WITHOUT a subject line, address a pain point there and mention a call again:"""
+    Write an email letter according to the REQUIREMENTS above, also add TWO follow-up letters WITHOUT a subject line, make it short and personalised:"""
     print(prompt, "\n")
     return autocomplete(prompt)
 
