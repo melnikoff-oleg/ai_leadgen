@@ -1,0 +1,378 @@
+[
+    {
+        "public_identifier": "yonas-khorsi",
+        "profile_pic_url": "https: //s3.us-west-000.backblazeb2.com/proxycurl/person/yonas-khorsi/profile?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0004d7f56a0400b0000000001%2F20231021%2Fus-west-000%2Fs3%2Faws4_request&X-Amz-Date=20231021T113006Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=53db1c73f70f3483d53ac5db69a76637d2d81e83f3ecd35435b71878c81918f9",
+        "background_cover_image_url": "https://s3.us-west-000.backblazeb2.com/proxycurl/person/yonas-khorsi/cover?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0004d7f56a0400b0000000001%2F20231021%2Fus-west-000%2Fs3%2Faws4_request&X-Amz-Date=20231021T113006Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=97011099a1d6d999af5283eaa231b0497e32ca1d9e2216c5a4eb3bccce198f65",
+        "first_name": "Yonas",
+        "last_name": "Khorsi",
+        "full_name": "Yonas Khorsi",
+        "follower_count": 545,
+        "occupation": "Owner & Founder at Automagency",
+        "headline": "Streamlining and automating your business processes, to save time and increase revenue.",
+        "summary": null,
+        "country": "NL",
+        "country_full_name": "Netherlands",
+        "city": "Amsterdam",
+        "state": "North Holland",
+        "experiences": [
+            {
+                "starts_at": {
+                    "day": 1,
+                    "month": 3,
+                    "year": 2022
+                },
+                "ends_at": null,
+                "company": "Automagency",
+                "company_linkedin_profile_url": "https://www.linkedin.com/company/automagency/",
+                "title": "Owner & Founder",
+                "description": null,
+                "location": "Amsterdam, Nederland",
+                "logo_url": "https://media.licdn.com/dms/image/D4E0BAQEVXABlSOhStA/company-logo_400_400/0/1690894839130/automagency_logo?e=1706140800&v=beta&t=_CqaTbBuEU1t_NX9FvU_jIHocwm-csnJqqFzV2-5O2c"
+            },
+            {
+                "starts_at": {
+                    "day": 1,
+                    "month": 7,
+                    "year": 2021
+                },
+                "ends_at": {
+                    "day": 31,
+                    "month": 12,
+                    "year": 2021
+                },
+                "company": "ServiceRight",
+                "company_linkedin_profile_url": "https://www.linkedin.com/company/serviceright/",
+                "title": "Businessmanager",
+                "description": null,
+                "location": "Amsterdam Zuidoost, Noord-Holland, Nederland",
+                "logo_url": "https://media.licdn.com/dms/image/C4D0BAQFRyk__DABkmw/company-logo_400_400/0/1519919968675?e=1706140800&v=beta&t=ZtVIhwgqby6DDdcgbEjr1rIEfWqtSZZbbKFDAsXvaG4"
+            },
+            {
+                "starts_at": {
+                    "day": 1,
+                    "month": 7,
+                    "year": 2020
+                },
+                "ends_at": {
+                    "day": 31,
+                    "month": 7,
+                    "year": 2021
+                },
+                "company": "ServiceRight",
+                "company_linkedin_profile_url": "https://www.linkedin.com/company/serviceright/",
+                "title": "Office & Sales Manager",
+                "description": null,
+                "location": "Almere, Flevoland, Nederland",
+                "logo_url": "https://media.licdn.com/dms/image/C4D0BAQFRyk__DABkmw/company-logo_400_400/0/1519919968675?e=1706140800&v=beta&t=ZtVIhwgqby6DDdcgbEjr1rIEfWqtSZZbbKFDAsXvaG4"
+            },
+            {
+                "starts_at": {
+                    "day": 1,
+                    "month": 1,
+                    "year": 2020
+                },
+                "ends_at": {
+                    "day": 31,
+                    "month": 7,
+                    "year": 2020
+                },
+                "company": "ServiceRight",
+                "company_linkedin_profile_url": "https://www.linkedin.com/company/serviceright/",
+                "title": "Customer Succes",
+                "description": null,
+                "location": "Almere, Flevoland, Nederland",
+                "logo_url": "https://media.licdn.com/dms/image/C4D0BAQFRyk__DABkmw/company-logo_400_400/0/1519919968675?e=1706140800&v=beta&t=ZtVIhwgqby6DDdcgbEjr1rIEfWqtSZZbbKFDAsXvaG4"
+            },
+            {
+                "starts_at": {
+                    "day": 1,
+                    "month": 10,
+                    "year": 2018
+                },
+                "ends_at": {
+                    "day": 31,
+                    "month": 1,
+                    "year": 2020
+                },
+                "company": "Ad Way Marketing",
+                "company_linkedin_profile_url": null,
+                "title": "Owner",
+                "description": "Specialist op het gebied van Social Media marketing en management.\n- Adverteren via social media kanalen als Facebook, Instagram en LinkedIn.\n- Creëren van content voor bedrijven.\n- Aanbrengen van content bij de juiste doelgroep.\n- Leadgeneration\n- Clickfunnels",
+                "location": null,
+                "logo_url": null
+            }
+        ],
+        "education": [],
+        "languages": [],
+        "accomplishment_organisations": [],
+        "accomplishment_publications": [],
+        "accomplishment_honors_awards": [],
+        "accomplishment_patents": [],
+        "accomplishment_courses": [],
+        "accomplishment_projects": [],
+        "accomplishment_test_scores": [],
+        "volunteer_work": [],
+        "certifications": [],
+        "connections": null,
+        "people_also_viewed": [
+            {
+                "link": "https://www.linkedin.com/in/gecitjeerd",
+                "name": "Tjeerd Leendertse 🍀",
+                "summary": "Typing...",
+                "location": null
+            },
+            {
+                "link": "https://www.linkedin.com/in/doede-scherphof-4a39071a8",
+                "name": "Doede Scherphof",
+                "summary": "Ik ontwerp games die leren leuk maken | Voor onderwijs en voor bedrijven",
+                "location": null
+            },
+            {
+                "link": "https://www.linkedin.com/in/rienkrk",
+                "name": "Rienk K.",
+                "summary": "Founder at Ovio",
+                "location": null
+            },
+            {
+                "link": "https://www.linkedin.com/in/dave-siebel",
+                "name": "Dave Siebel",
+                "summary": "Enthousiastic entrepreneur | JRDL Webdesign | Clothing brand for tall people",
+                "location": null
+            },
+            {
+                "link": "https://www.linkedin.com/in/mabajarbou",
+                "name": "Maba Jarbou",
+                "summary": "Founder Ghit Media B.V. | Change the world... or die trying!",
+                "location": null
+            },
+            {
+                "link": "https://www.linkedin.com/in/tinozwirs",
+                "name": "Tino Zwirs",
+                "summary": "Board Member | Startup Founder | Entrepreneurship Lecturer | Innovation Enthusiast 🚀",
+                "location": null
+            },
+            {
+                "link": "https://www.linkedin.com/in/djesse-grootscholten-aaa5341a2",
+                "name": "Djesse Grootscholten",
+                "summary": "Toffe content maken, commerciele teksten schrijven of jouw verhaal op een originele manier vertellen? I got you! | Content Creator en Creative | Stuur me een appje om kennis te maken.",
+                "location": null
+            },
+            {
+                "link": "https://www.linkedin.com/in/sannehazeveld",
+                "name": "Sanne Hazeveld",
+                "summary": "-",
+                "location": null
+            },
+            {
+                "link": "https://www.linkedin.com/in/olaf-van-der-heijden",
+                "name": "Olaf van der Heijden",
+                "summary": "Strategy-first Designer & Webflow Dev.",
+                "location": null
+            },
+            {
+                "link": "https://www.linkedin.com/in/twan-nuijen",
+                "name": "Twan Nuijen",
+                "summary": "Freelance Filmmaker",
+                "location": null
+            }
+        ],
+        "recommendations": [],
+        "activities": [],
+        "similarly_named_profiles": [],
+        "articles": [],
+        "groups": [],
+        "skills": [
+            "Business Process Automation",
+            "No-Code Automation",
+            "Make.com",
+            "Monday.com",
+            "Zapier",
+            "Integromat",
+            "Airtable",
+            "Make",
+            "Automatisering",
+            "Commercieel bewustzijn",
+            "Analytisch denkvermogen",
+            "Accountmanagement",
+            "Communicatie",
+            "Management"
+        ],
+        "inferred_salary": {
+            "min": null,
+            "max": null
+        },
+        "gender": null,
+        "birth_date": null,
+        "industry": null,
+        "extra": {
+            "github_profile_id": null,
+            "twitter_profile_id": null,
+            "facebook_profile_id": null
+        },
+        "interests": [],
+        "personal_emails": [],
+        "personal_numbers": []
+    },
+    {
+        "public_identifier": "pépin-isliker-17b4251a4",
+        "profile_pic_url": "https: //media.licdn.com/dms/image/D4E03AQECaSEwlLujDw/profile-displayphoto-shrink_400_400/0/1690470416601?e=1703116800&v=beta&t=3VHho99dtXOXXointfrr_8ULxg1MFTCB9qnloJUcj9A",
+        "background_cover_image_url": "https://media.licdn.com/dms/image/D4E16AQE6mmGzIqHjgA/profile-displaybackgroundimage-shrink_200_800/0/1695300696956?e=1703116800&v=beta&t=4431B6C94LuyHz6q0PEGwVEJPBY2CuIyJO9kYrO_8to",
+        "first_name": "Pépin ",
+        "last_name": "Isliker",
+        "full_name": "Pépin  Isliker",
+        "follower_count": 540,
+        "occupation": null,
+        "headline": "Ik help bedrijven met het automatiseren en optimaliseren van hun bedrijfsprocessen | No-code software specialist",
+        "summary": "Mijn doel 💡\nBedrijven helpen met het identificeren van hun bottlenecks en deze vrij te maken, zodat ze kunnen opschalen naar een nieuw niveau. Ik wil ze helpen om herhalend en handmatig werk zoveel mogelijk te elimineren en workflows efficiënter te maken. Zo besparen ze tijd, geld en wordt er meer overzicht gecreëerd binnen het bedrijf.\n\nHoe? 👨\u200d💻\nDoor gebruik te maken van no-code software zoals: Make.com (Integromat), Airtable, Softr, Zapier en meer. Mijn ervaring met no-code software heeft me de vaardigheid gegeven om de juiste tools voor de taak te identificeren en ze effectief te implementeren.\n\nInteresse? ⚡\nBen je ook op zoek naar een manier om de productiviteit van je team te verhogen? Of wil je afscheid nemen van repeterende taken zodat je kan focussen op zaken die ertoe doen? Laten we dan eens gaan praten over welke mogelijkheden er zijn binnen jouw organisatie. Ik deel mijn kennis graag met je.",
+        "country": "NL",
+        "country_full_name": "Netherlands",
+        "city": "Amsterdam",
+        "state": "North Holland",
+        "experiences": [],
+        "education": [
+            {
+                "starts_at": {
+                    "day": 1,
+                    "month": 9,
+                    "year": 2019
+                },
+                "ends_at": {
+                    "day": 28,
+                    "month": 2,
+                    "year": 2023
+                },
+                "field_of_study": "Science and Innovation Management",
+                "degree_name": "Bachelor's degree",
+                "school": "Utrecht University",
+                "school_linkedin_profile_url": "https: //www.linkedin.com/company/166740/",
+                "description": "Innovation Sciences trains students on how to become innovation experts. They learn on how new technologies are transformed into marketable products. Learned knowledge can be applied to real-world businesses and policy problems.",
+                "logo_url": "https://media.licdn.com/dms/image/C510BAQG6HfmPTdJKXw/company-logo_400_400/0/1519884681258?e=1706140800&v=beta&t=qFqo-nRtlinv96fk3JsWcYEDiGkIhFhT97lsEExDR9I",
+                "grade": null,
+                "activities_and_societies": null
+            },
+            {
+                "starts_at": {
+                    "day": 1,
+                    "month": 10,
+                    "year": 2021
+                },
+                "ends_at": {
+                    "day": 31,
+                    "month": 7,
+                    "year": 2022
+                },
+                "field_of_study": "Entrepreneurship/Entrepreneurial Studies",
+                "degree_name": "Minor",
+                "school": "Utrecht University",
+                "school_linkedin_profile_url": "https://www.linkedin.com/company/166740/",
+                "description": "This minor provides students with the tools to start, run and understand a business. Covering topics from business planning to operations management, it equips individuals with the tools to innovate and manage ventures effectively.",
+                "logo_url": "https://media.licdn.com/dms/image/C510BAQG6HfmPTdJKXw/company-logo_400_400/0/1519884681258?e=1706140800&v=beta&t=qFqo-nRtlinv96fk3JsWcYEDiGkIhFhT97lsEExDR9I",
+                "grade": null,
+                "activities_and_societies": null
+            }
+        ],
+        "languages": [
+            "Dutch",
+            "English"
+        ],
+        "accomplishment_organisations": [],
+        "accomplishment_publications": [],
+        "accomplishment_honors_awards": [],
+        "accomplishment_patents": [],
+        "accomplishment_courses": [],
+        "accomplishment_projects": [],
+        "accomplishment_test_scores": [],
+        "volunteer_work": [],
+        "certifications": [],
+        "connections": 541,
+        "people_also_viewed": [
+            {
+                "link": "https://www.linkedin.com/in/ellina-kamko-87b02b27a",
+                "name": "Ellina Kamko",
+                "summary": "UI/UX Designer",
+                "location": null
+            },
+            {
+                "link": "https://www.linkedin.com/in/saud-ahmed-4b3904276",
+                "name": "Saud Ahmed",
+                "summary": "B2B Insights | Demand Generation",
+                "location": null
+            },
+            {
+                "link": "https://www.linkedin.com/in/sinansbayindir",
+                "name": "Sinan Bayindir",
+                "summary": "Software Engineer",
+                "location": null
+            },
+            {
+                "link": "https://www.linkedin.com/in/christina-pears",
+                "name": "Christina Pears",
+                "summary": "Project and Program Management | Business Operations | Strategic Partnerships | Experience managing company-wide initiatives",
+                "location": null
+            },
+            {
+                "link": "https://www.linkedin.com/in/rachellemo",
+                "name": "Rachelle Oliver",
+                "summary": "Program Manager | Scrum Master | Mortgage Underwriter & Real Estate Sales",
+                "location": null
+            },
+            {
+                "link": "https://www.linkedin.com/in/rajat-kumar-0b79ab286",
+                "name": "Rajat Kumar",
+                "summary": "Project Manager at Outdesign Co.",
+                "location": null
+            },
+            {
+                "link": "https://www.linkedin.com/in/dmitriyzhakotov",
+                "name": "Dmitriy Zhakotov",
+                "summary": "IT research specialist",
+                "location": null
+            },
+            {
+                "link": "https://www.linkedin.com/in/alexa-hojczyk-07788298",
+                "name": "Alexa Hojczyk",
+                "summary": "Senior UX Strategist | User Researcher | Accessibility Specialist | Creating the blueprint for better universal user experiences",
+                "location": null
+            },
+            {
+                "link": "https://www.linkedin.com/in/chulangaaveril",
+                "name": "Chulanga Averil Hettiarachchi",
+                "summary": "MBA Candidate at Cardiff Metropolitan University | B.Sc. (Hons) Computer Science and Software Engineering - First Class(UK)  | ICT Project Coordinator |Software Engineer | Web Developer",
+                "location": null
+            },
+            {
+                "link": "https://www.linkedin.com/in/terrence-washington-ba1423b2",
+                "name": "Terrence Washington",
+                "summary": "Hiring Program Management Talent? We Can Help ★ Founder & Principal at T. W. Options, Inc. ★ Career & Mindset Coach",
+                "location": null
+            }
+        ],
+        "recommendations": [],
+        "activities": [],
+        "similarly_named_profiles": [],
+        "articles": [],
+        "groups": [
+            {
+                "profile_pic_url": "https://media.licdn.com/dms/image/D4D07AQEiIhgtLpLRAQ/group-logo_image-shrink_48x48/0/1675919771558?e=1698494400&v=beta&t=lZLqPAWSD6H_xjcceeyrXadQvhLZ5L2LeTolUA_ta3c",
+                "name": "Artificial Intelligence, Machine Learning, Computer Vision, Analytics, Data Science, OpenAI, ChatGPT",
+                "url": "https://www.linkedin.com/groups/7037632"
+            }
+        ],
+        "skills": [],
+        "inferred_salary": {
+            "min": null,
+            "max": null
+        },
+        "gender": null,
+        "birth_date": null,
+        "industry": null,
+        "extra": {
+            "github_profile_id": null,
+            "twitter_profile_id": null,
+            "facebook_profile_id": null
+        },
+        "interests": [],
+        "personal_emails": [],
+        "personal_numbers": []
+    }
+]
