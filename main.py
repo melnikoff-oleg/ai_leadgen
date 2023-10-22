@@ -28,7 +28,7 @@ def get_email_sequence_by_linked_in_profile(
 
 
 def main():
-    input_file_name = "leads_v0_test.csv"
+    input_file_name = "leads_v0.csv"
     output_file_name = "leads_v1.csv"
     settings = Settings()
     openai.api_key = settings.OPENAI_API_TOKEN
