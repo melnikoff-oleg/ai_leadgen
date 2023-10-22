@@ -13,22 +13,22 @@ def get_email_sequence_by_linked_in_profile(
     linkedin_url: str, settings: Settings, spendings_counter: dict
 ) -> Optional[dict]:
     parsed_profile = parse_profile(linkedin_url, settings, spendings_counter)
-    print(json.dumps(parsed_profile, indent=4), "\n")
+    # print(json.dumps(parsed_profile, indent=4), "\n")
     summary = get_linkedin_profile_summary(parsed_profile, spendings_counter)
-    print(summary, "\n")
+    # print(summary, "\n")
     marketing_letters = get_marketing_letter(summary, spendings_counter)
-    print(marketing_letters, "\n")
+    # print(marketing_letters, "\n")
     json_packaged_marketing_letters = get_json_packaged_marketing_letters(
         marketing_letters, spendings_counter
     )
     if json_packaged_marketing_letters is None:
         return None
-    print(json.dumps(json_packaged_marketing_letters, indent=4), "\n")
+    # print(json.dumps(json_packaged_marketing_letters, indent=4), "\n")
     return json_packaged_marketing_letters
 
 
 def main():
-    input_file_name = "leads_v0.csv"
+    input_file_name = "leads_v0_test.csv"
     output_file_name = "leads_v1.csv"
     settings = Settings()
     openai.api_key = settings.OPENAI_API_TOKEN
@@ -39,7 +39,7 @@ def main():
         columns=df_v0.columns.tolist()
         + ["subject", "body", "follow_up_1", "follow_up_2"]
     )
-    for _, row in tqdm(df_v0.iterrows(), len(df_v0)):
+    for _, row in tqdm(df_v0.iterrows(), total=df_v0.shape[0]):
         result = get_email_sequence_by_linked_in_profile(
             row["linkedin_url"], settings, spendings_counter
         )
@@ -52,6 +52,8 @@ def main():
         new_row["follow_up_2"] = result["follow_up_2"]
         df_v1 = df_v1._append(new_row)
     df_v1.to_csv(output_file_name, index=False)
+    with open("spendings_counter.json", "w") as f:
+        json.dump(spendings_counter, f, indent=4)
 
 
 if __name__ == "__main__":
