@@ -80,7 +80,7 @@ def get_marketing_letter(
         - use AIDA framework (Attention, Interest, Desire, Action) to structure your email
         - in the beginning of email give a small NOT FAKE compliment to recipient
         - in the end if email say that if the recipient is interested in our offer, we can schedule a call
-        - in the end write 'Kind regards, Oleg Melnikov | www.evolva.ai'
+        - in the end write 'Kind regards, Oleg Melnikov | Evolva.ai'
         - don't mention evolva ai in the email body
         What exact services that you're selling:
         - booking meetings with qualified potential clients for software development companies
