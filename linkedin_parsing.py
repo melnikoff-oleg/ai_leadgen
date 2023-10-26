@@ -29,8 +29,8 @@ def get_profile(
     try:
         response = requests.get(api_endpoint, params=params, headers=header_dic).json()
         return response
-    except:
-        print("Something went wrong with this profile", profile_url)
+    except Exception as e:
+        print("Something went wrong with this profile", profile_url, "Error:\n", e)
         return None
 
 
@@ -71,6 +71,13 @@ def parse_profile(
                 datetime.now().year - response["experiences"][-1]["starts_at"]["year"]
             )
         return res
-    except:
-        print("Something went wrong with this profile", profile_url)
+    except Exception as e:
+        print(
+            "Something went wrong with this profile",
+            profile_url,
+            "Error:\n",
+            e,
+            "\nResponse:\n",
+            response,
+        )
         return None

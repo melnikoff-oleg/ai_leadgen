@@ -31,9 +31,9 @@ def get_email_sequence_by_linked_in_profile(
 def get_current_state(input_file_name):
     output_file_name = input_file_name + "_enriched.csv"
     input_file_name += ".csv"
-    df_v0 = pd.read_csv(input_file_name, index_col=0)
+    df_v0 = pd.read_csv(input_file_name)
     if os.path.exists(output_file_name):
-        df_v1 = pd.read_csv(output_file_name, index_col=0)
+        df_v1 = pd.read_csv(output_file_name)
     else:
         df_v1 = pd.DataFrame(
             columns=df_v0.columns.tolist()
