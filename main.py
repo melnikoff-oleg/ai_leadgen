@@ -57,7 +57,7 @@ def save_current_state(input_file_name, df_v1, spendings_counter):
 
 
 def main():
-    input_file_name = "leads"
+    input_file_name = "UAE_swd_leads"
     settings = Settings()
     openai.api_key = settings.OPENAI_API_TOKEN
     df_v0, df_v1, spendings_counter = get_current_state(input_file_name)
