@@ -1,5 +1,6 @@
 import copy
 import json
+import os
 
 from tqdm import tqdm
 from settings import Settings
@@ -27,18 +28,39 @@ def get_email_sequence_by_linked_in_profile(
     return json_packaged_marketing_letters
 
 
-def main():
-    input_file_name = "leads_v0_test.csv"
-    output_file_name = "leads_v1.csv"
-    settings = Settings()
-    openai.api_key = settings.OPENAI_API_TOKEN
+def get_current_state(input_file_name):
+    output_file_name = input_file_name + "_enriched.csv"
+    input_file_name += ".csv"
+    df_v0 = pd.read_csv(input_file_name, index_col=0)
+    if os.path.exists(output_file_name):
+        df_v1 = pd.read_csv(output_file_name, index_col=0)
+    else:
+        df_v1 = pd.DataFrame(
+            columns=df_v0.columns.tolist()
+            + ["subject", "body", "follow_up_1", "follow_up_2"]
+        )
+    if len(df_v1) > 0:
+        for i, row in df_v0.iterrows():
+            if row["email"] == df_v1.iloc[-1]["email"]:
+                df_v0 = df_v0.iloc[i + 1 :]
+                break
     with open("spendings_counter.json", "r") as f:
         spendings_counter = json.load(f)
-    df_v0 = pd.read_csv(input_file_name, index_col=0)
-    df_v1 = pd.DataFrame(
-        columns=df_v0.columns.tolist()
-        + ["subject", "body", "follow_up_1", "follow_up_2"]
-    )
+    return df_v0, df_v1, spendings_counter
+
+
+def save_current_state(input_file_name, df_v1, spendings_counter):
+    output_file_name = input_file_name + "_enriched.csv"
+    df_v1.to_csv(output_file_name, index=False)
+    with open("spendings_counter.json", "w") as f:
+        json.dump(spendings_counter, f, indent=4)
+
+
+def main():
+    input_file_name = "leads"
+    settings = Settings()
+    openai.api_key = settings.OPENAI_API_TOKEN
+    df_v0, df_v1, spendings_counter = get_current_state(input_file_name)
     for _, row in tqdm(df_v0.iterrows(), total=df_v0.shape[0]):
         result = get_email_sequence_by_linked_in_profile(
             row["linkedin_url"], settings, spendings_counter
@@ -51,9 +73,7 @@ def main():
         new_row["follow_up_1"] = result["follow_up_1"]
         new_row["follow_up_2"] = result["follow_up_2"]
         df_v1 = df_v1._append(new_row)
-    df_v1.to_csv(output_file_name, index=False)
-    with open("spendings_counter.json", "w") as f:
-        json.dump(spendings_counter, f, indent=4)
+        save_current_state(input_file_name, df_v1, spendings_counter)
 
 
 if __name__ == "__main__":

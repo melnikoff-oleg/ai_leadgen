@@ -73,21 +73,23 @@ def get_marketing_letter(
     if personal_summmary is None:
         return None
     try:
-        prompt = f"""You're a professional marketing and cold b2b outreach expert. Your task is to write an email letter promoting b2b lead generation service for software development company.
+        prompt = f"""You're a THE BEST marketing and cold b2b outreach expert ON EARTH. Your task is to write an email letter promoting b2b lead generation service for software development company.
         REQUIREMENTS:
-        - write a personalised subject line (HARD LIMIT 50 CHARACTERS) that stands out and makes the recipient want to open the email. use small letters to stand out. assume familiarity with the recipient
+        - ALL EMAIL SHOULD BE HYPER PERSONALIZED
+        - write a personalised subject line (HARD LIMIT 50 CHARACTERS) that stands out and makes the recipient want to open the email. use small letters to stand out
         - write a short email body (max 100 words) that makes the recipient want to reply
         - use AIDA framework (Attention, Interest, Desire, Action) to structure your email
-        - in the beginning of email give a small, NOT FAKE, NOT CHEESY personal note to the recipient (DON'T SAY YOU LIKE THEIR WORK)
-        - in the end if email say that if the recipient is interested in our offer, we can schedule a call
+        - in the beginning of email give a small, NOT FAKE, NOT CHEESY personal note to the recipient (DON'T SAY YOU LIKE THEIR WORK, OR THAT YOU'RE FOLLOWING THEM)
+        - in the end of email say that if the recipient is interested in our offer, we can schedule a call
         - in the end write 'Kind regards, Oleg Melnikov | Evolva.ai'
         - don't mention evolva ai in the email body
+        - don't use complex english words, keep in mind that the recipient may be a non-native english speaker
+        - add new lines so it would be very easy to read, and text should look like mountain peaks - short sentences interspersed with long ones
         What exact services that you're selling:
         - booking meetings with qualified potential clients for software development companies
-        - we use cold email for it, but we do it in a very personalized way using AI
-        - we stand out and can get a response from a potential client even if it's a big company and they get 100s of emails per day
+        - we use cold email for it, but we do it in a very personalized way using AI, that is our secret sauce, we stand out and can get a response from a potential client even if it's a big company and they get 100s of emails per day
         - we work on performance basis, so we charge only for actual meetings with qualified leads
-        - we guarantee at the vert least 5 meetings with qualified leads per month, otherwise you don't pay
+        - we guarantee at the very least 5 meetings with qualified leads per month, otherwise you don't pay
         - there's no work on the client's side, we do everything ourselves
         Summary of the person that we're reaching out to and his/her company:
         {personal_summmary}
