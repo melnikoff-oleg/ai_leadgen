@@ -63,7 +63,7 @@ def save_current_state(input_file_name, df_v1, spendings_counter):
 
 
 def main():
-    input_file_name = "apollo-contacts-export"
+    input_file_name = "swd nyc 1-20 from apollo"
     settings = Settings()
     openai.api_key = settings.OPENAI_API_TOKEN
     df_v0, df_v1, spendings_counter = get_current_state(input_file_name)
