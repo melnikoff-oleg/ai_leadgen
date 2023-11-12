@@ -5,19 +5,25 @@ import os
 from tqdm import tqdm
 from settings import Settings
 import openai
-from linkedin_parsing import parse_profile
+from linkedin_parsing import *
 from gpt_toolkit import *
 import pandas as pd
 
 
 def get_email_sequence_by_linked_in_profile(
-    linkedin_url: str, settings: Settings, spendings_counter: dict
+    profile_url: str, company_url: str, settings: Settings, spendings_counter: dict
 ) -> Optional[dict]:
-    parsed_profile = parse_profile(linkedin_url, settings, spendings_counter)
+    parsed_profile = parse_profile(profile_url, settings, spendings_counter)
+    parsed_company = parse_company(company_url, settings, spendings_counter)
     print(json.dumps(parsed_profile, indent=4), "\n")
-    summary = get_linkedin_profile_summary(parsed_profile, spendings_counter)
-    print(summary, "\n")
-    marketing_letters = get_marketing_letter(summary, spendings_counter)
+    print(json.dumps(parsed_company, indent=4), "\n")
+    profile_summary = get_linkedin_profile_summary(parsed_profile, spendings_counter)
+    print(profile_summary, "\n")
+    company_summary = get_linkedin_company_summary(parsed_company, spendings_counter)
+    print(company_summary, "\n")
+    marketing_letters = get_marketing_letter(
+        profile_summary, company_summary, spendings_counter
+    )
     print(marketing_letters, "\n")
     json_packaged_marketing_letters = get_json_packaged_marketing_letters(
         marketing_letters, spendings_counter
@@ -41,7 +47,7 @@ def get_current_state(input_file_name):
         )
     if len(df_v1) > 0:
         for i, row in df_v0.iterrows():
-            if row["email"] == df_v1.iloc[-1]["email"]:
+            if row["Email"] == df_v1.iloc[-1]["Email"]:
                 df_v0 = df_v0.iloc[i + 1 :]
                 break
     with open("spendings_counter.json", "r") as f:
@@ -57,13 +63,16 @@ def save_current_state(input_file_name, df_v1, spendings_counter):
 
 
 def main():
-    input_file_name = "UAE_swd_leads"
+    input_file_name = "apollo-contacts-export"
     settings = Settings()
     openai.api_key = settings.OPENAI_API_TOKEN
     df_v0, df_v1, spendings_counter = get_current_state(input_file_name)
     for _, row in tqdm(df_v0.iterrows(), total=df_v0.shape[0]):
         result = get_email_sequence_by_linked_in_profile(
-            row["linkedin_url"], settings, spendings_counter
+            row["Person Linkedin Url"],
+            row["Company Linkedin Url"],
+            settings,
+            spendings_counter,
         )
         if result is None:
             continue
